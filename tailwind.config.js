@@ -11,6 +11,11 @@ export default {
           200: "#888883",
         },
       },
+      textColor: {
+        primary: "#3CB35A",
+        light: "#F3F4F6",
+        dark: "#1F2937",
+      },
     },
   },
   plugins: [],

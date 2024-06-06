@@ -105,12 +105,12 @@ function Header() {
         <PopoverGroup className="hidden lg:flex py-2 lg:gap-x-8 ">
           <Link
             to="/new-share"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            className="text-sm font-semibold leading-6 text-dark dark:text-light"
           >
             New Share
           </Link>
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-dark dark:text-light">
               Features
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400 dark:text-gray-300"
@@ -142,7 +142,7 @@ function Header() {
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900 dark:text-gray-100"
+                          className="block font-semibold text-dark dark:text-light"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -159,7 +159,7 @@ function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800"
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-dark hover:bg-gray-100 dark:text-light dark:hover:bg-gray-800"
                     >
                       <item.icon
                         className="h-5 w-5 flex-none text-gray-400 dark:text-gray-300"
@@ -174,7 +174,7 @@ function Header() {
           </Popover>
           <Link
             to="/about"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            className="text-sm font-semibold leading-6 text-dark dark:text-light"
           >
             About
           </Link>
@@ -182,7 +182,7 @@ function Header() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-12 lg:py-4 items-center">
           <Link
             to="/login"
-            className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            className="text-sm font-semibold leading-6 text-dark dark:text-light"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -221,7 +221,7 @@ function Header() {
                     <>
                       <DisclosureButton
                         className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7
-                       text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                       text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                       >
                         Product
                         <ChevronDownIcon
@@ -239,7 +239,7 @@ function Header() {
                             as="a"
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 
-                            text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                            text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                           >
                             {item.name}
                           </DisclosureButton>
@@ -251,21 +251,21 @@ function Header() {
                 <Link
                   to="/new-share"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 
-                  text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                  text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                 >
                   New Share
                 </Link>
                 <Link
                   to="/features"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7
-                   text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                   text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                 >
                   Features
                 </Link>
                 <Link
                   to="/about"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7
-                   text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                   text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                 >
                   About
                 </Link>
@@ -274,7 +274,7 @@ function Header() {
                 <Link
                   to="/login"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7
-                   text-gray-900 hover:bg-gray-50 dark:text-gray-100 dark:hover:bg-gray-900"
+                   text-dark hover:bg-gray-50 dark:text-light dark:hover:bg-gray-900"
                 >
                   Log in
                 </Link>
