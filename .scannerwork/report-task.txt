@@ -1,0 +1,6 @@
+projectKey=Their-Share
+serverUrl=http://localhost:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://localhost:9000/dashboard?id=Their-Share
+ceTaskId=4a900a0b-2357-4dae-99c6-7d2696cd6569
+ceTaskUrl=http://localhost:9000/api/ce/task?id=4a900a0b-2357-4dae-99c6-7d2696cd6569

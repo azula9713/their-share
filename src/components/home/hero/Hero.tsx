@@ -1,8 +1,11 @@
 import CTAButton from "../../common/ctaButton/CTAButton";
 
+import { useNavigate } from "react-router-dom";
 import HeroImage from "../../../assets/hero.png";
 
 function Hero() {
+  const navigate = useNavigate();
+
   return (
     <div className="pt-10 bg-white dark:bg-gray-900">
       <section className="flex flex-wrap items-center font-sans px-4 mx-auto w-full lg:max-w-screen-lg sm:max-w-screen-sm pb-20">
@@ -21,7 +24,14 @@ function Hero() {
             </p>
           </div>
           <div className="text-center lg:text-left flex flex-col lg:flex-row items-center justify-start space-y-3 lg:space-x-5 lg:space-y-0 sm:max-w-screen-sm lg:max-w-lg">
-            <CTAButton text="Start Splitting" hierarchy="primary" />
+            <CTAButton
+              text="Start Splitting"
+              hierarchy="primary"
+              onClick={() => {
+                const id = Math.floor(Math.random() * 1000);
+                navigate(`/split/${id}`);
+              }}
+            />
             <CTAButton text="Key Features" hierarchy="secondary" />
           </div>
         </div>
@@ -34,6 +44,16 @@ function Hero() {
               alt="hero"
               className="block max-w-full h-auto align-middle lg:max-w-lg"
             />
+          </div>
+          {/* add image attributes in a small link line */}
+          <div className="text-center mt-5 text-xs text-slate-500 dark:text-slate-300">
+            <a
+              href="https://www.freepik.com/free-vector/transfer-money-concept-illustration_10389141.htm"
+              target="_blank"
+              className="text-slate-500 dark:text-slate-300"
+            >
+              Image by storyset on Freepik
+            </a>
           </div>
         </div>
       </section>

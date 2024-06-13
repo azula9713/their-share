@@ -17,6 +17,10 @@ export default {
         dark: "#1F2937",
       },
     },
+    fontFamily: {
+      // Lato
+      lato: ["Lato", "sans-serif"],
+    },
   },
   plugins: [],
 };
