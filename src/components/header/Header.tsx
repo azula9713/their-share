@@ -94,15 +94,20 @@ function Header() {
           <div className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-primary">
             <span className="sr-only">Open main menu</span>
 
-            <DarkMode theme={theme} toggleTheme={toggleTheme} />
+            <DarkMode
+              theme={theme}
+              toggleTheme={toggleTheme}
+              testId="dark-mode-mobile"
+            />
             <Bars3Icon
               className={`h-6 w-6 ${theme === "dark" ? "text-gray-200" : ""}`}
               aria-hidden="true"
+              data-testid="mobile-menu-button"
               onClick={() => setMobileMenuOpen(true)}
             />
           </div>
         </div>
-        <PopoverGroup className="hidden lg:flex py-2 lg:gap-x-8 ">
+        <PopoverGroup className="hidden lg:flex py-2 lg:gap-x-8">
           <Link
             to="/new-share"
             className="text-sm font-semibold leading-6 text-dark dark:text-light"
@@ -186,11 +191,16 @@ function Header() {
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </Link>
-          <DarkMode theme={theme} toggleTheme={toggleTheme} />
+          <DarkMode
+            theme={theme}
+            toggleTheme={toggleTheme}
+            testId="dark-mode-desktop"
+          />
         </div>
       </nav>
       <Dialog
         className="lg:hidden"
+        data-testid="mobile-menu"
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
@@ -207,6 +217,7 @@ function Header() {
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-primary"
+              data-testid="mobile-menu-button-close"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>

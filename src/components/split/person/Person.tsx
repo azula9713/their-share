@@ -5,7 +5,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
-import Textbox from "../common/textbox/Textbox";
+import Textbox from "../../common/textbox/Textbox";
 
 interface ISpending {
   id: number;
@@ -46,7 +46,7 @@ function Person() {
         {spendings.map((spending) => (
           <div
             key={spending.id}
-            className="relative flex flex-col items-center justify-between w-full border border-gray-300 dark:border-gray-700 rounded mt-4 p-2"
+            className="relative flex flex-col items-center justify-between w-full border border-gray-300 dark:border-gray-700 rounded-xl mt-4 p-2"
           >
             <XMarkIcon
               className="absolute top-0 right-0 bg-red-500 hover:bg-red-700 text-white font-bold rounded-full size-5 m-[-10px]"
@@ -54,17 +54,10 @@ function Person() {
                 setSpendings(spendings.filter((s) => s.id !== spending.id));
               }}
             />
-
-            <input
-              type="text"
-              className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded mt-2"
-              placeholder="What did they spend on?"
-            />
-            <input
-              type="number"
-              className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded mt-2"
-              placeholder="How much did they spend?"
-            />
+            <div className="w-full flex-col items-center justify-center space-y-2">
+              <Textbox placeholder="What did they spend on?" />
+              <Textbox placeholder="How much did they spend?" type="number" />
+            </div>
           </div>
         ))}
 

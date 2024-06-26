@@ -1,5 +1,5 @@
-import Textbox from "../components/common/textbox/Textbox";
-import Person from "../components/split/Person";
+import Person from "../components/split/person/Person";
+import SplitTitle from "../components/split/splitTitle/SplitTile";
 import BaseLayout from "../layout/BaseLayout";
 
 function Split() {
@@ -10,7 +10,7 @@ function Split() {
           <h3 className="text-2xl text-black dark:text-white font-bold">
             What are we splitting?
           </h3>
-          <Textbox placeholder="Eg: Sunday Brunch, Groceries, etc" />
+          <SplitTitle />
         </div>
         <div className="w-full max-w-lg flex flex-col space-y-4 items-start justify-center mb-4">
           <h3 className="text-2xl text-black dark:text-white font-bold">

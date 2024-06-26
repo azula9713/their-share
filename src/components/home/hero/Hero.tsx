@@ -93,7 +93,6 @@ function Hero() {
             >
               Source Code
             </a>
-            |
             <a
               href="https://egoistdeveloper.github.io/my-tailwind-components/./src/templates/parallax-landing-page.html"
               target="_blank"
