@@ -8,6 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 sonar-project.properties
 
+
+# Add yarn lockfile
+yarn.lock
+
 node_modules
 dist
 dist-ssr
