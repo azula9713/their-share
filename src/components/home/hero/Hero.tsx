@@ -2,6 +2,7 @@ import CTAButton from "../../common/ctaButton/CTAButton";
 
 import { useNavigate } from "react-router-dom";
 import HeroImage from "../../../assets/hero.png";
+import { splitIdGenerator } from "../../../utils/IdGenerator";
 
 function Hero() {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ function Hero() {
               text="Start Splitting"
               hierarchy="primary"
               onClick={() => {
-                const id = Math.floor(Math.random() * 1000);
+                const id = splitIdGenerator();
                 navigate(`/split/${id}`);
               }}
             />

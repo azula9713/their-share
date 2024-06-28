@@ -14,10 +14,6 @@ function Logo({ logo, darkLogo }: Readonly<Props>) {
     setLogoSrc(theme === "dark" ? darkLogo : logo);
   }, [theme, logo, darkLogo]);
 
-  useEffect(() => {
-    console.log("logoSrc changed to", logoSrc);
-  }, [logoSrc]);
-
   return (
     <img
       key={theme}

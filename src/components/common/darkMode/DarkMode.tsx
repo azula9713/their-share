@@ -9,7 +9,7 @@ type Props = {
 function DarkMode({
   theme,
   toggleTheme,
-  testId = "darak-mode",
+  testId = "dark-mode",
 }: Readonly<Props>) {
   return (
     <button
